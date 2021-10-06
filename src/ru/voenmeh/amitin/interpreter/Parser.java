@@ -18,7 +18,7 @@ public class Parser {
 
     public Parser(ArrayList<Token> symbolTable){ //при создании экземпляра класса
         this.symbolTable = symbolTable; //присваиваем ссылку на таблицу символов
-        currentIndex = 0; //устанавливаем указать на первую строку таблицы для начала разбора
+        currentIndex = 0; //устанавливаем указатель на первую строку таблицы для начала разбора
         token = symbolTable.get(currentIndex); //получаем первую строку таблицы символов
     }
 

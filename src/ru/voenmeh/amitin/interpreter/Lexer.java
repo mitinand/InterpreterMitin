@@ -46,7 +46,7 @@ public class Lexer {
             switch (currentID) { //если менеджер вернул идентификатор
                 case UNIDENTIFIED: //лексема не распознана ни одни КА, возвращаем лексическую ошибку
                     throw new UnrecognizedTokenException("Unrecognized token \"" + lexeme.append(symbol).toString() + "\"");
-                default: //лексема распознала
+                default: //лексема распознана
                     symbolTable.add(new Token(currentID, lexeme.toString())); //добавляем её идентификатор и значение в таблицу символов
                     break;
             }
